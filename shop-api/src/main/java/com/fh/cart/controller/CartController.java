@@ -16,7 +16,7 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
-
+    //向购物车中添加商品
     @RequestMapping("addCartItem")
     public ServerResponse addCartItem(Integer productId, HttpServletRequest request){
         try {
